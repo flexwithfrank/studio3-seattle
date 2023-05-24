@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBS6yy9nOlVMDjxu1HodV803ld3Iaw00w&libraries=places"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon"
+        href="https://image.marketing.fiskerinc.com/lib/fe2f11727364047f721373/m/1/06cef172-1418-4395-90e0-b37ea34a7da4.png">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-6157RWXQR2');
+    </script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Studio3 Signup
+    </title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+        ::placeholder {
+            font-family: Fisker-Medium, Arial, Helvetica, sans-serif;
+        }
+
+        @font-face {
+            font-family: "Gothic-Regular";
+            src: url("https://ik.imagekit.io/is20rnl48/visbycf-medium-webfont.woff?updatedAt=1684887851659") format("woff"),
+                url("https://ik.imagekit.io/is20rnl48/VisbyCF-Medium.otf?updatedAt=1684887852287") format("opentype");
+        }
+
+        @font-face {
+            font-family: "Gothic-Bold";
+            src: url("https://ik.imagekit.io/is20rnl48/League_Gothic-webfont.woff?updatedAt=1684813313150") format("woff"),
+                url("https://ik.imagekit.io/is20rnl48/League_Gothic.otf?updatedAt=1684813297759") format("opentype");
+        }
+
+
+        .gothic-bold,
+        h1,
+        h2 {
+            font-family: Gothic-Bold, Arial, Helvetica, sans-serif !important;
+        }
+
+        .gothic-regular,
+        p {
+            font-family: Gothic-Regular, Arial, Helvetica, sans-serif !important;
+        }
+
+        .quote {
+            z-index: 999 !important;
+        }
+
+        .star {
+            line-height: 30%;
+        }
+    </style>
+</head>
+
+<body class="bg-[#211F1F]">
+
+    <div class="bg-[#211F1F] relative">
+
+        <div id="marketing-banner" tabindex="-1"
+            class="fixed z-50 flex flex-col md:flex-row justify-between w-[calc(100%-2rem)] p-8 -translate-x-1/2 bg-[#EEEEEE] border border-gray-100 rounded-lg shadow-sm lg:max-w-7xl left-1/2 top-6 dark:bg-gray-700 dark:border-gray-600">
+            <div class="flex flex-col items-start mb-3 mr-4 md:items-center md:flex-row md:mb-0 ">
+                <a href="https://flowbite.com/"
+                    class="flex items-center mb-2 border-gray-200 md:pr-4 md:mr-4 md:border-r md:mb-0 dark:border-gray-600">
+                    <span
+                        class="self-center text-5xl font-bold whitespace-nowrap dark:text-white gothic-bold uppercase">Studio3
+                    </span>
+                </a>
+                <p class="flex items-center text-md font-normal text-black dark:text-gray-400 gothic-regular">
+                    60-Transformation Challenge | <span class="font-bold"> June 12 - August 13 </span></p>
+            </div>
+            <div class="flex items-center flex-shrink-0">
+                <a href="#"
+                    class="px-10 py-2 mr-2 text-xl font-bold text-white bg-[#fe8234] rounded-full gothic-bold uppercase">Sign
+                    up</a>
+                <button id="scrollToFAQsButton" onclick="scrollToFAQs()" class="px-2 py-2 mr-2 text-xl font-bold text-black bg-transparent rounded-full gothic-bold uppercase focus:outline-none" type="button">FAQS</button>
+
+                <button data-dismiss-target="#marketing-banner" type="button"
+                    class="absolute top-2.5 right-2.5 md:relative md:top-auto md:right-auto flex-shrink-0 inline-flex justify-center items-center text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 dark:hover:bg-gray-600 dark:hover:text-black">
+                    <svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="sr-only">Close banner</span>
+                </button>
+            </div>
+        </div>
+        <!-- main page start -->
+        <div class="p-8 lg:p-0 mt-60 lg:mt-40 lg:max-w-7xl mx-auto">
+            <!-- <div class="py-6 rounded-lg">
+           
+                <section
+                    class="overflow-hidden bg-[url(https://ik.imagekit.io/is20rnl48/Screen_Shot_2023-05-23_at_12.02.10_AM.png?updatedAt=1684825403427)] bg-cover bg-top bg-no-repeat rounded-2xl border-4 border-white">
+                    <div class="bg-black/25 p-8 md:p-12 lg:px-16 lg:py-24">
+                        <div class="absolute left-0 star top-0 z-0 p-0">
+                            <span
+                                class="mx-auto star text-[10rem] font-semibold leading-none tracking-none text-[#fe8234] lg:text-[20rem]">
+                                *</span>
+                        </div>
+                        <div class="text-center ltr:sm:text-left rtl:sm:text-right py-20">
+                            <h2 class="text-2xl font-bold text-white sm:text-3xl md:text-5xl gothic-bold opacity-80">
+                                60-DAY TRANSFORMATION CHALLENGE
+                            </h2>
+
+
+                        </div>
+                    </div>
+                </section>
+            </div> -->
+            <div class="w-full bg-[#EEEEEE] rounded-3xl">
+                <div>
+                    <section>
+                        <div class="flex flex-col items-start px-5 max-w-7xl sm:px-6 lg:px-8 py-4">
+                            <!-- main -->
+                            <div class="flex flex-col w-full max-w-7xl">
+                                <div class="w-full mx-auto">
+                                    <h2 class="gothic-bold font-bold text-3xl uppercase text-black">STUDIO3 SEATTLE</h2>
+                                </div>
+                                <hr class="h-px my-2 bg-black border-0 dark:bg-gray-700">
+                                <!-- 1st -->
+                                <section>
+                                    <div class="relative items-center w-full">
+                                        <div class="grid w-full grid-cols-1 gap-12 mx-auto lg:grid-cols-2">
+                                            <div>
+
+                                                <h1
+                                                    class="mx-auto mb-8 text-5xl font-bold text-black lg:text-8xl gothic-bold uppercase">
+                                                    JOIN THE 60-DAY TRANSFORMATION <span
+                                                        class="underline">CHALLENGE.</span> 💪🏼
+                                                </h1>
+
+                                                <div class="lg:ml-10 ml-4">
+                                                    <span
+                                                        class="inline-flex align-middle justify-center align-center items-center py-2 relative">
+                                                        <p
+                                                            class="mx-auto leading-relaxed text-[#fe8234] gothic-regular font-extrabold text-xl lg:text-3xl">
+                                                            💦 Unlimited Workouts | <span
+                                                                class="text-black">60-Days</span>
+                                                        </p>
+                                                    </span>
+                                                    <span
+                                                        class="inline-flex align-middle justify-center align-center items-center py-2">
+                                                        <p
+                                                            class="mx-auto leading-relaxed text-[#fe8234] gothic-regular text-xl lg:text-3xl font-extrabold">
+                                                            📏 (3) 3D Body Scans| <span class="text-black">Track Results
+                                                            </span>
+                                                        </p>
+                                                    </span>
+                                                    <span
+                                                        class="inline-flex align-middle justify-center align-center items-center py-2">
+                                                        <p
+                                                            class="mx-auto leading-relaxed text-[#fe8234] gothic-regular text-xl lg:text-3xl font-extrabold">
+                                                            💸 $500 | <span class="text-black">Grand Prize
+                                                                Winner!</span>
+                                                        </p>
+                                                    </span>
+                                                    <div class="py-8">
+                                                        <a href="#"
+                                                        class="px-20 py-3 mr-2 text-2xl font-bold text-white bg-[#fe8234] rounded-full gothic-bold uppercase">Sign
+                                                        up</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="lg:pt-40">
+                                                <div class="w-full rounded-xl relative">
+                                                    <div class="absolute left-0 star top-0 z-0 p-0">
+                                                        <span
+                                                            class="mx-auto star text-[10rem] font-semibold leading-none tracking-none text-[#fe8234] lg:text-[20rem]">
+                                                            *</span>
+                                                    </div>
+                                                    <div>
+                                                        <img class="object-cover object-center mx-auto rounded-lg shadow-2xl border-4 border-[#fe8234]"
+                                                            alt="hero"
+                                                            src="https://ik.imagekit.io/is20rnl48/Screen_Shot_2023-05-23_at_4.23.55_PM.png?updatedAt=1684884267686">
+
+                                                    </div>
+                                                </div>
+                                                <div class="py-10">
+                                                    <h1
+                                                        class="mx-auto text-6xl font-bold text-[#fe8234] lg:text-8xl gothic-bold uppercase">
+                                                        JUNE 12 - AUGUST 13TH
+                                                    </h1>
+                                                </div>
+                                                <a href="#"
+                                                    class="px-20 py-3 mr-2 text-2xl font-bold text-white bg-[#fe8234] rounded-full gothic-bold uppercase">Sign
+                                                    up</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <!-- second -->
+                                <section class="py-20">
+                                    <div class="relative items-center w-full">
+                                        <div class="grid w-full grid-cols-1 gap-12 mx-auto lg:grid-cols-2">
+                                            <div class="w-full lg:w-5/6 lg:max-w-lg md:w-1/2 rounded-xl">
+                                                <div class="relative">
+                                                    <div class="absolute leading-none star left-0 top-0 z-0 p-0">
+                                                        <span
+                                                            class="mx-auto text-[10rem] font-semibold leading-none tracking-none text-[#fe8234] lg:text-[15rem]">
+                                                            ^</span>
+                                                    </div>
+                                                    <img class="object-cover object-center mx-auto rounded-lg shadow-2xl border-4 border-black"
+                                                        alt="hero"
+                                                        src="https://ik.imagekit.io/is20rnl48/Screen_Shot_2023-05-22_at_10.06.09_PM.png?updatedAt=1684818483369">
+                                                    <div class="w-full mx-auto py-3">
+                                                        <h2 class="gothic-bold font-bold text-5xl uppercase text-black">
+                                                            JOIN THE
+                                                            <span class="underline">MOVEMENT</span>.
+                                                        </h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-full rounded-xl relative">
+                                                <div class="absolute right-0 star top-0 z-0 p-0">
+                                                    <span
+                                                        class="mx-auto star text-[10rem] font-semibold leading-none tracking-none text-[#fe8234] lg:text-[20rem]">
+                                                        *</span>
+                                                </div>
+                                                <div>
+                                                    <img class="object-cover object-center mx-auto rounded-lg shadow-2xl border-4 border-black"
+                                                        alt="hero"
+                                                        src="https://ik.imagekit.io/is20rnl48/Screen_Shot_2023-05-22_at_10.07.32_PM.png?updatedAt=1684818483430">
+                                                    <div class="w-full mx-auto py-3">
+                                                        <h2 class="gothic-bold font-bold text-5xl uppercase text-black">
+                                                            <span class="underline">CHALLENGE</span> YOUR BODY.
+                                                        </h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- third -->
+
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="flex w-full mx-auto text-left">
+                <div class="relative inline-flex items-center mx-auto align-middle">
+                    <div class="absolute right-0 top-0 z-0 p-0">
+                        <span
+                            class="mx-auto text-[10rem] font-semibold leading-none tracking-none text-[#fe8234] lg:text-[20rem]">
+                            *</span>
+                    </div>
+                    <div class="text-center relative">
+                        <div class="lg:pt-24 pt-10">
+                            <h1
+                                class="max-w-5xl text-5xl font-bold text-white md:text-4xl lg:text-7xl lg:max-w-5xl gothic-bold uppercase z-50">
+                                (PRIZES)
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- next -->
+            <section class="bg-transparent">
+                <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+                    <div class="">
+                        <dl class="grid grid-cols-3 gap-4 sm:grid-cols-3 sm:divide-x sm:divide-gray-100">
+                            <div class="flex flex-col px-4 py-4 text-center">
+                                <dt class="order-last text-lg font-medium text-white gothic-regular">
+                                    1st Place
+                                </dt>
+
+                                <dd class="text-4xl font-extrabold text-[#fe8234] md:text-7xl gothic-bold">
+                                    $500
+                                </dd>
+                            </div>
+
+                            <div class="flex flex-col px-4 py-4 text-center">
+                                <dt class="order-last text-lg font-medium text-white gothic-regular">
+                                    2nd Place
+                                </dt>
+
+                                <dd class="text-4xl font-extrabold text-[#fe8234] md:text-7xl gothic-bold">$250</dd>
+                            </div>
+
+                            <div class="flex flex-col px-4 py-4 text-center">
+                                <dt class="order-last text-lg font-medium text-white gothic-regular">
+                                    3rd Place
+                                </dt>
+
+                                <dd class="text-4xl font-extrabold text-[#fe8234] md:text-7xl gothic-bold">$150</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </section>
+
+            <div class="flex w-full mx-auto text-left">
+                <div class="relative inline-flex items-center mx-auto align-middle">
+                    <div class="absolute right-0 top-0 z-0 p-0">
+                        <span
+                            class="mx-auto text-[10rem] font-semibold leading-none tracking-none text-[#fe8234] lg:text-[20rem]">
+                            *</span>
+                    </div>
+                    <div class="text-center relative">
+                        <div class="lg:pt-24 py-10">
+                            <h1
+                                class="max-w-5xl text-5xl font-bold text-white md:text-4xl lg:text-7xl lg:max-w-5xl gothic-bold uppercase z-50">
+                                (WORKOUTS)
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="controls-carousel" class="relative w-full max-w-5xl mx-auto py-2" data-carousel="static">
+                <!-- Carousel wrapper -->
+                <div class="relative h-96 overflow-hidden rounded-lg md:h-96">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                        <article class="flex bg-transparent transition">
+                            <div class="rotate-180 p-2 [writing-mode:_vertical-lr]">
+                                <time datetime="2022-10-10"
+                                    class="flex items-center justify-between text-xs font-bold uppercase text-gray-900">
+
+                                    <span
+                                        class="text-white gothic-bold text-3xl bg-neutral-800 rounded py-10 px-2 h-full mx-1 text-right">STRENGTH
+                                        &nbsp;&nbsp;&nbsp;&nbsp; &#8250;</span>
+                                </time>
+                            </div>
+
+                            <div class="hidden sm:block w-80">
+                                <img alt="Guitar"
+                                    src="https://ik.imagekit.io/is20rnl48/Screen_Shot_2023-05-22_at_10.07.32_PM.png?updatedAt=1684818483430"
+                                    class="aspect-square h-full w-full object-cover rounded-lg border-4 border-white" />
+                            </div>
+
+                            <div class="flex flex-1 flex-col justify-between">
+                                <div class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
+                                    <a href="#">
+                                        <h3 class="font-bold uppercase text-white gothic-bold text-5xl">
+                                            STRENGTH TRAINING
+                                        </h3>
+                                    </a>
+
+                                    <p class="mt-2 line-clamp-3 text-sm/relaxed text-white">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+                                        dolores, possimus pariatur animi temporibus nesciunt praesentium dolore
+                                        sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta,
+                                        voluptates neque explicabo tempora nisi culpa eius atque dignissimos.
+                                        Molestias explicabo corporis voluptatem?
+                                    </p>
+                                </div>
+
+                                <div class="sm:flex sm:items-end sm:justify-end">
+                                    <a href="#"
+                                        class="block bg-[#fe8234] px-5 py-3 text-center text-xs font-bold uppercase text-white transition hover:bg-yellow-400 rounded-full">
+                                        SIGN UP
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <article class="flex bg-transparent transition">
+                            <div class="rotate-180 p-2 [writing-mode:_vertical-lr]">
+                                <time datetime="2022-10-10"
+                                    class="flex items-center justify-between text-xs font-bold uppercase text-gray-900">
+
+                                    <span
+                                        class="text-white gothic-bold text-3xl bg-neutral-800 rounded py-10 px-2 h-full mx-1 text-right">PILATES
+                                        &nbsp;&nbsp;&nbsp;&nbsp; &#8250;</span>
+                                </time>
+                            </div>
+
+                            <div class="hidden sm:block w-80">
+                                <img alt="Guitar"
+                                    src="https://ik.imagekit.io/is20rnl48/Screen_Shot_2023-05-22_at_11.35.23_PM.png?updatedAt=1684823800515"
+                                    class="aspect-square h-full w-full object-cover rounded-lg border-4 border-white" />
+                            </div>
+
+                            <div class="flex flex-1 flex-col justify-between">
+                                <div class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
+                                    <a href="#">
+                                        <h3 class="font-bold uppercase text-white gothic-bold text-5xl">
+                                            HEATED PILATES
+                                        </h3>
+                                    </a>
+
+                                    <p class="mt-2 line-clamp-3 text-sm/relaxed text-white">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+                                        dolores, possimus pariatur animi temporibus nesciunt praesentium dolore
+                                        sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta,
+                                        voluptates neque explicabo tempora nisi culpa eius atque dignissimos.
+                                        Molestias explicabo corporis voluptatem?
+                                    </p>
+                                </div>
+
+                                <div class="sm:flex sm:items-end sm:justify-end">
+                                    <a href="#"
+                                        class="block bg-[#fe8234] px-5 py-3 text-center text-xs font-bold uppercase text-white transition hover:bg-yellow-400 rounded-full">
+                                        SIGN UP
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <article class="flex bg-transparent transition">
+                            <div class="rotate-180 p-2 [writing-mode:_vertical-lr]">
+                                <time datetime="2022-10-10"
+                                    class="flex items-center justify-between text-xs font-bold uppercase text-gray-900">
+
+                                    <span
+                                        class="text-white gothic-bold text-3xl bg-neutral-800 rounded py-10 px-2 h-full mx-1 text-right">CYCLE
+                                        &nbsp;&nbsp;&nbsp;&nbsp; &#8250;</span>
+                                </time>
+                            </div>
+
+                            <div class="hidden sm:block w-80">
+                                <img alt="Guitar"
+                                    src="https://ik.imagekit.io/is20rnl48/Screen_Shot_2023-05-22_at_11.35.56_PM.png?updatedAt=1684823800864"
+                                    class="aspect-square h-full w-full object-cover rounded-lg border-4 border-white" />
+                            </div>
+
+                            <div class="flex flex-1 flex-col justify-between">
+                                <div class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
+                                    <a href="#">
+                                        <h3 class="font-bold uppercase text-white gothic-bold text-5xl">
+                                            INDOOR CYCLE
+                                        </h3>
+                                    </a>
+
+                                    <p class="mt-2 line-clamp-3 text-sm/relaxed text-white">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+                                        dolores, possimus pariatur animi temporibus nesciunt praesentium dolore
+                                        sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta,
+                                        voluptates neque explicabo tempora nisi culpa eius atque dignissimos.
+                                        Molestias explicabo corporis voluptatem?
+                                    </p>
+                                </div>
+
+                                <div class="sm:flex sm:items-end sm:justify-end">
+                                    <a href="#"
+                                        class="block bg-[#fe8234] px-5 py-3 text-center text-xs font-bold uppercase text-white transition hover:bg-yellow-400 rounded-full">
+                                        SIGN UP
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <article class="flex bg-transparent transition">
+                            <div class="rotate-180 p-2 [writing-mode:_vertical-lr]">
+                                <time datetime="2022-10-10"
+                                    class="flex items-center justify-between text-xs font-bold uppercase text-gray-900">
+
+                                    <span
+                                        class="text-white gothic-bold text-3xl bg-neutral-800 rounded py-10 px-2 h-full mx-1 text-right">BOOTCAMP
+                                        &nbsp;&nbsp;&nbsp;&nbsp; &#8250;</span>
+                                </time>
+                            </div>
+
+                            <div class="hidden sm:block w-80">
+                                <img alt="Guitar"
+                                    src="https://ik.imagekit.io/is20rnl48/Screen_Shot_2023-05-23_at_4_1_.07?updatedAt=1684883944911"
+                                    class="aspect-square h-full w-full object-cover rounded-lg border-4 border-white" />
+                            </div>
+
+                            <div class="flex flex-1 flex-col justify-between">
+                                <div class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
+                                    <a href="#">
+                                        <h3 class="font-bold uppercase text-white gothic-bold text-5xl">
+                                            BOOTCAMP
+                                        </h3>
+                                    </a>
+
+                                    <p class="mt-2 line-clamp-3 text-sm/relaxed text-white">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+                                        dolores, possimus pariatur animi temporibus nesciunt praesentium dolore
+                                        sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta,
+                                        voluptates neque explicabo tempora nisi culpa eius atque dignissimos.
+                                        Molestias explicabo corporis voluptatem?
+                                    </p>
+                                </div>
+
+                                <div class="sm:flex sm:items-end sm:justify-end">
+                                    <a href="#"
+                                        class="block bg-[#fe8234] px-5 py-3 text-center text-xs font-bold uppercase text-white transition hover:bg-yellow-400 rounded-full">
+                                        SIGN UP
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <article class="flex bg-transparent transition">
+                            <div class="rotate-180 p-2 [writing-mode:_vertical-lr]">
+                                <time datetime="2022-10-10"
+                                    class="flex items-center justify-between text-xs font-bold uppercase text-gray-900">
+
+                                    <span
+                                        class="text-white gothic-bold text-3xl bg-neutral-800 rounded py-10 px-2 h-full mx-1 text-right">YOGA
+                                        &nbsp;&nbsp;&nbsp;&nbsp; &#8250;</span>
+                                </time>
+                            </div>
+
+                            <div class="hidden sm:block w-80">
+                                <img alt="Guitar"
+                                    src="https://ik.imagekit.io/is20rnl48/Screen_Shot_2023-05-22_at_11.39.46_PM.png?updatedAt=1684824039555"
+                                    class="aspect-square h-full w-full object-cover rounded-lg border-4 border-white" />
+                            </div>
+
+                            <div class="flex flex-1 flex-col justify-between">
+                                <div class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
+                                    <a href="#">
+                                        <h3 class="font-bold uppercase text-white gothic-bold text-5xl">
+                                            HEATED YOGA
+                                        </h3>
+                                    </a>
+
+                                    <p class="mt-2 line-clamp-3 text-sm/relaxed text-white">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+                                        dolores, possimus pariatur animi temporibus nesciunt praesentium dolore
+                                        sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta,
+                                        voluptates neque explicabo tempora nisi culpa eius atque dignissimos.
+                                        Molestias explicabo corporis voluptatem?
+                                    </p>
+                                </div>
+
+                                <div class="sm:flex sm:items-end sm:justify-end">
+                                    <a href="#"
+                                        class="block bg-[#fe8234] px-5 py-3 text-center text-xs font-bold uppercase text-white transition hover:bg-yellow-400 rounded-full">
+                                        SIGN UP
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!-- Slider controls -->
+                <button type="button"
+                    class="absolute bottom-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-transparent/30 dark:bg-gray-800/30 group-hover:bg-transparent/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button"
+                    class="absolute bottom-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-transparent/30 dark:bg-gray-800/30 group-hover:bg-transparent/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+
+
+            <div id="faqs" class="flex w-full mx-auto text-left">
+                <div class="relative inline-flex items-center mx-auto align-middle">
+                    <div class="absolute right-0 -top-10 z-0 p-0">
+                        <span
+                            class="mx-auto star text-[10rem] font-semibold leading-none tracking-none text-[#fe8234] lg:text-[20rem]">
+                            *</span>
+                    </div>
+                    <div class="text-center relative">
+                        <div class="pt-10">
+                            <h1
+                                class="max-w-5xl text-5xl font-bold text-white md:text-4xl lg:text-7xl lg:max-w-5xl gothic-bold uppercase z-50">
+                                FAQS
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="accordionFlushExample" class="max-w-3xl mx-auto">
+                <div
+                    class="rounded-none border border-l-0 border-r-0 border-t-0 border-neutral-200 bg-transparent dark:border-neutral-600 dark:bg-neutral-800">
+                    <h2 class="mb-0" id="flush-headingOne">
+                        <button
+                            class="group relative flex w-full items-center rounded-none border-0 bg-transparent px-5 py-4 text-left text-2xl text-white transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-transparent [&:not([data-te-collapse-collapsed])]:text-white [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-white-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+                            type="button" data-te-collapse-init data-te-target="#flush-collapseOne"
+                            aria-expanded="false" aria-controls="flush-collapseOne">
+                            HOW DO I SIGNUP
+                            <span
+                                class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                </svg>
+                            </span>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="!visible border-0" data-te-collapse-item data-te-collapse-show
+                        aria-labelledby="flush-headingOne" data-te-parent="#accordionFlushExample">
+                        <div class="px-5 py-4 text-white gothic-regular">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ultrices tincidunt arcu non sodales neque sodales ut. Sed
+                            elementum tempus egestas sed sed risus pretium quam vulputate
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="rounded-none border border-l-0 border-r-0 border-t-0 border-neutral-200 bg-transparent dark:border-neutral-600 dark:bg-neutral-800">
+                    <h2 class="mb-0" id="flush-headingTwo">
+                        <button
+                            class="group relative flex w-full items-center rounded-none border-0 bg-transparent px-5 py-4 text-left text-2xl text-white transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-transparent [&:not([data-te-collapse-collapsed])]:text-white [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-white-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+                            type="button" data-te-collapse-init data-te-collapse-collapsed
+                            data-te-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            HOW DO I REGISTER FOR CLASSES
+                            <span
+                                class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                </svg>
+                            </span>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="!visible hidden border-0" data-te-collapse-item
+                        aria-labelledby="flush-headingTwo" data-te-parent="#accordionFlushExample">
+                        <div class="px-5 py-4 text-white gothic-regular">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ultrices tincidunt arcu non sodales neque sodales ut. Sed
+                            elementum tempus egestas sed sed risus pretium quam vulputate
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="rounded-none border border-b-0 border-l-0 border-r-0 border-t-0 border-neutral-200 bg-transparent dark:border-neutral-600 dark:bg-neutral-800">
+                    <h2 class="mb-0" id="flush-headingThree">
+                        <button
+                            class="group relative flex w-full items-center rounded-none border-0 bg-transparent px-5 py-4 text-left text-2xl text-white transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-transparent [&:not([data-te-collapse-collapsed])]:text-white [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-white-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+                            type="button" data-te-collapse-init data-te-collapse-collapsed
+                            data-te-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            WHO CAN I CONTACT?
+                            <span
+                                class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                </svg>
+                            </span>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="!visible hidden" data-te-collapse-item
+                        aria-labelledby="flush-headingThree" data-te-parent="#accordionFlushExample">
+                        <div class="px-5 py-4 text-white gothic-regular">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ultrices tincidunt arcu non sodales neque sodales ut. Sed
+                            elementum tempus egestas sed sed risus pretium quam vulputate
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- third -->
+            <section class="w-full bg-transparent">
+
+                <div class="items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-16 max-w-7xl lg:py-24">
+
+                    <div class="flex w-full mx-auto text-left">
+                        <div class="relative inline-flex items-center mx-auto align-middle">
+                            <div class="absolute right-0 top-0 z-0 p-0">
+                                <span
+                                    class="mx-auto text-[10rem] font-semibold leading-none tracking-none text-[#fe8234] lg:text-[20rem]">
+                                    *</span>
+                            </div>
+                            <div class="absolute left-0 bottom-0 z-0 p-10 z-0 star">
+                                <span
+                                    class="mx-auto text-[6rem] font-semibold leading-none tracking-none text-[#fe8234] lg:text-[10rem]">
+                                    !</span>
+                            </div>
+                            <div class="text-center relative">
+                                <div class="lg:pt-24 pt-10">
+                                    <h1
+                                        class="max-w-5xl text-5xl font-bold text-white md:text-4xl lg:text-7xl lg:max-w-5xl gothic-bold uppercase z-50">
+                                        "" The last three or four reps is what makes the muscle grow. The area of pain
+                                        divides a champion from someone is not a champion
+                                        your visitors into users ""
+                                    </h1>
+                                    <div class="py-12">
+                                        <a href="#"
+                                            class="px-20 py-3 mr-2 text-2xl font-bold text-white bg-[#fe8234] rounded-full gothic-bold uppercase">Sign
+                                            up</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <hr class="h-px my-2 bg-transparent border-0 w-full">
+            </section>
+
+        </div>
+
+        <footer
+            class="absolute bottom-0 left-1/2 w-full p-4 bg-[#211F1F] text-white text-center transform -translate-x-1/2 gothic-medium">
+            <p class="text-2xl gothic-bold uppercase">&copy; 2023 Studio 3 | 229 Queen Anne Ave N. Seattle, WA |
+                206.788.9880
+            </p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+<script>
+    function scrollToFAQs() {
+  const faqsElement = document.getElementById('faqs');
+  faqsElement.scrollIntoView({ behavior: 'smooth' });
+}
+
+</script>
+</body>
+
+</html>
